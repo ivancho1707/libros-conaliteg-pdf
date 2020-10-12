@@ -1,0 +1,9 @@
+output/
+out/
+venv/
+.DS_Store
+.idea/
+__pycache__/
+*.py[cod]
+*$py.class
+.gitignore
