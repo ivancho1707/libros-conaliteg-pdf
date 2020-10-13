@@ -9,7 +9,7 @@
         1. Docker (recomendado)
         1. Manual
 1. Licencias
-    1. Éste proyecto
+    1. Este proyecto
     1. Libros de texto CONALITEG
         1. Renuncia legal
 
@@ -27,19 +27,19 @@ ciudadanos.
 El [material liberado por la CONALITEG](https://www.gob.mx/conaliteg/articulos/conoce-el-catalogo-historico-de-los-libros-de-texto-gratuitos) 
 es un esfuerzo valiosísimo en
 términos educativos ya que documenta la evolución de la educación
-pública en México y a la par la evolución de la ideosincracia y 
+pública en México y junto con la evolución de la ideosincracia y 
 nececidades de sociedad méxicana.
 
-No obstante, ésta información está limitada por su formato;
+No obstante, esta información está limitada ya que consiste de 
 imágenes de cada una de las páginas de los libros de texto, con 
 las que el lector no puede interactuar como lo haría con cualquier
 otro material digital y tampoco tiene esa comodidad e intimidad que
 ofrece un sostener en su manos un libro tradicional.
 
-Éstas obras entonces, no pueden ser consumidas por los usuarios de 
+Estas obras entonces, no pueden ser consumidas por los usuarios de 
 internet como lo acostumbran, aprovechando las herramientas a su
 alcance que les permiten interactuar de manera más eficiente con la
-información, desaprovechando así la gran oportunidad de incorporar
+información, desperdiciándose así la gran oportunidad de incorporar
 a sus hábitos de aprendizaje éstos materiales de gran calidad.
 
 ### ¿Qué es un PDF indexado?
@@ -57,24 +57,24 @@ debilidad visual, como indicar al ordenador leer el texto en voz alta.
 
 ### ¿Cómo funciona este proyecto?
 
-Para lograr su cometido, este trabajo aprovecha del una técnica llamada
+Para lograr su cometido, este trabajo utiliza del una técnica llamada
 Reconocimiento Óptico de Carácteres (OCR) para obtener texto contenido
-en una imágen de manera precisa, descartando cualquier ambiguedad.
+en una imagen de manera precisa, descartando cualquier ambiguedad.
 
 Ésto se logra por medio de varios procedimientos intermedios como 
 el procesamiento dígital de imágenes, para limpiar la imágen; 
 la inteligencia artificial, para detectar la presencia de patrones
 que puedan ser interpretados como caracteres; algoritmos estadísticos 
 y bases de datos de idiomas, para identificar con exactitud palabras
-y sequiencias de éstas que formen enunciadops coherentes.
+y secuencias de éstas que formen enunciadops coherentes.
 
 Las tecnologías necesarias para este fin son proveídas en su mayoría
-por biblíotecas de software libre.
+por bibliotecas de software libre.
 
 ## Uso del script
 
 Este script ha sido desarrollado en Python, sin embargo se apoya en
-dependencias otras que no son libtrerías de python como es Tesseract
+dependencias otras que no son bibliotecas de python como es Tesseract
 y su extensión de lenguaje español, los cuales necesitan ser
 instalados por sus métodos correspondientes. 
 
@@ -102,7 +102,7 @@ docker pull ivancho1707/libros-conaliteg-pdf
 
 Debido a las nuevas políticas de Docker Hub, la imagen pudiera
 no estar disponible si no es usada en 90 días. Si este es el caso,
-usted mismo puede construirla clonando éste repositorio, o bien
+usted mismo puede construirla clonando este repositorio, o bien
 descargando el archivo `Dockerfile` en el directorio principal de
 este repositorio y ejecutando la siguiente instrucción desde el
 directorio que contiene el archivo:
@@ -118,7 +118,7 @@ el script:
 docker run -it --rm -v ${PWD}:/conaliteg/ ivancho1707/libros-conaliteg-pdf:1.0
 ```
 
-Tome en cuenta que desde la locación en la que se ejecute este 
+Tome en cuenta que desde la ubicación en la que se ejecute este 
 comando, se creará un directorio llamado `output` con la su nuevo
 PDF indexado de terminar éxitosamente con la ejecución del
 programa.
@@ -136,7 +136,7 @@ siguientes aplicaciones:
 
 Posteriormente instale las dependencias de Python desde el 
 directorio raíz del proyecto con el siguiente comando desde
-su términal:
+su terminal:
 
 ```
 pip3 install -r requirements.txt
@@ -149,7 +149,7 @@ python3 main.py
 ```
 
 ## Licencias
-### Éste proyecto
+### Este proyecto
 
 Este proyecto tiene siguiente licencia:
 
@@ -164,7 +164,7 @@ la Comisión Nacional de Libros de Texto Gratuitos (CONALITEG) y
 las entidades o personas a las que este organismo le endose
 esos derechos.
 
-Para consultar la información especifica de cada libro refierase 
+Para consultar la información especifica de cada libro refiérase 
 a su respectiva portada.
 
 #### Renuncia legal
@@ -175,8 +175,8 @@ materiales educativos, ni posee los derechos sobre la obra,
 tampoco almacena, replica o distribuye ninguno de sus materiales
 fuera de lo especifcado como uso justo (Fair Use)
 
-Está estrictamente prohíbida la venta, distribución o reproducción
-impresao o digital, total o parcial de cualquiera de los materiales
+Está estrictamente prohibida la venta, distribución o reproducción
+impresa o digital, total o parcial de cualquiera de los materiales
 de la CONALITEG. 
 
 El lucrar con libros de texto gratuitos es un delito federal 
