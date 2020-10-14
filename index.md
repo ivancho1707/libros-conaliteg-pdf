@@ -7,11 +7,12 @@
 1. Uso del script
     1. Preparación del ambiente de ejecución
         1. Docker (recomendado)
-        1. Manual
+        1. Instalación Manual
+    1. Limitaciones
 1. Licencias
     1. Este proyecto
     1. Libros de texto CONALITEG
-        1. Renuncia legal
+    1. Renuncia legal
 
 
 
@@ -123,16 +124,19 @@ comando, se creará un directorio llamado `output` con la su nuevo
 PDF indexado de terminar éxitosamente con la ejecución del
 programa.
 
-#### Manual
+#### Instalación Manual
 
-Clone este repositorio con git e instale en su sistema las 
-siguientes aplicaciones:
+Clone este repositorio con git e instale en su sistema ocrmypdf 
+v11.0.0 o superior que instalará:
 
 * Python 3.6 o superior
 * Ghostscript 9.15 o superior
 * qpdf 8.1.0 o superior
 * Tesseract 4.0.0-beta o superior
 * Extensión del lenguaje Español de Tesseract
+
+Alternativamente puede hacer la instalación de cada dependencia
+individualmente
 
 Posteriormente instale las dependencias de Python desde el 
 directorio raíz del proyecto con el siguiente comando desde
@@ -148,14 +152,45 @@ finalmente ejecute el escript desde el mismo directorio con:
 python3 main.py
 ```
 
+### Limitaciones
+
+Aunque la eficacia es muy alta en cuanto a la precision de la
+detección de texto y su interpretación, el procedimiento no es
+del todo perfecto. Los fallos principalmente son inherentes al
+proceso que está diseñado para procesar la mayor parte de los 
+textos, por lo que casos específicos quedan en el rango de 
+aceptables a no procesados.
+
+A continuación una lista de los casos conocidos:
+
+* La posición del texto parece estar un poco desplazada
+
+* Texto no detectado cuando el fondo es un gradiente o hay
+poco contraste entre éste y el color del texto.
+
+* Texto desordenado en algunos casos donde el texto está 
+ordenado en columnas
+
+* Texto no detectado dentro de la mayoría de celdas de una 
+tabla
+
+* Texto no detectado cuando la fuente es muy estilizada, 
+gigante o simula escritura a mano
+
+* Texto impreciso, fragmentado o no detectado cuando está
+escrito en sentido no horizontal
+
+* Viñetas y otros símbolos editoriales son interpretados
+como carácteres
+
 ## Licencias
 ### Este proyecto
 
-Este proyecto tiene siguiente licencia:
+Este proyecto es proveído bajo la licencia [Creative Commons
+Attribution-SareAlike 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
-```
-Licensed under Creative Commons Attribution-ShareAlike 4.0.
-```
+Una copia completa de la licencia en Español puede ser encontrada
+[aquí](https://creativecommons.org/licenses/by-sa/4.0/legalcode.es)
 
 ### Libros de texto CONALITEG
 
@@ -167,13 +202,27 @@ correspondientes derechos.
 Para consultar la información especifica de cada libro refiérase 
 a su respectiva portada.
 
-#### Renuncia legal
+### Renuncia legal
 
-El autor de esta herramienta no está afiliado con la CONALITEG 
+Este software es proveído "tal y como está", sin garantía de ningun
+tipo expresa o implicita, incluídas pero no límitadas a garantías
+mercantiles, de adaptación para un fin en particular y de vulneración
+a derechos de terceros. Bajo ninguna circunstancia el autor puede ser
+sujeto causante por cualquier reclamo, daño u otro tipo de responsabilidad
+ya sea en acción de un contrato, agravio o cualquier  otro motivo
+que surja dentro, fuera o en conexión con este software o su uso u 
+otros derivados de él. Veáse la [Exención de Garantías y Limitación
+de Responsabilidad](https://creativecommons.org/licenses/by-sa/4.0/legalcode.es#s5)
+de la [licencia](#Este-proyecto) para más información.
+
+El autor de este software no está afiliado con la CONALITEG 
 o ninguna otra entidad involucrada en la elaboración de estos 
 materiales educativos, ni posee los derechos sobre la obra, 
 tampoco almacena, replica o distribuye ninguno de sus materiales
-fuera de lo especifcado como uso justo (Fair Use)
+fuera de lo especifcado como *uso justo* (Fair Use) en el derecho
+internacional o dentro de las *Limitaciones a los Derechos 
+Patrimoniales* de autor como específica la *Ley Mexicana de Derechos 
+de Autor*.
 
 Está estrictamente prohibida la venta, distribución o reproducción
 impresa o digital, total o parcial de cualquiera de los materiales
