@@ -4,7 +4,7 @@
   <img width="552" height="670" src="https://raw.githubusercontent.com/ivancho1707/libros-conaliteg-pdf/gh-pages/assets/demo_final.gif">
 </p>
 
-1. Acerca del proyecto
+1. [Acerca del proyecto](#acerca-del-proyecto)
     1. Motivación
     1. ¿Qué es un PDF indexado?
     1. ¿Cómo funciona este proyecto?
