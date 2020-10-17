@@ -6,7 +6,7 @@
 
 1. [Acerca del proyecto](#acerca-del-proyecto)
     1. [Motivación](#motivaci&oacute;n)
-    1. [¿Qué es un PDF indexado?](#&iquest;qu&eacute;-es-un-pdf-indexado?)
+    1. [¿Qué es un PDF indexado?](#qué-es-un-pdf-indexado)
     1. ¿Cómo funciona este proyecto?
 1. Uso del script
     1. Preparación del ambiente de ejecución
