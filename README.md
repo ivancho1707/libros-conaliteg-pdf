@@ -1,20 +1,22 @@
 # Script de descarga para libros CONALITEG
 
-1. Acerca del proyecto
-    1. Motivación
-    1. ¿Qué es un PDF indexado?
-    1. ¿Cómo funciona este proyecto?
-1. Uso del script
-    1. Preparación del ambiente de ejecución
-        1. Docker (recomendado)
-        1. Instalación Manual
-    1. Limitaciones
-1. Licencias
-    1. Este proyecto
-    1. Libros de texto CONALITEG
-    1. Renuncia legal
+<p align="center">
+  <img width="552" height="670" src="https://raw.githubusercontent.com/ivancho1707/libros-conaliteg-pdf/gh-pages/assets/demo_final.gif">
+</p>
 
-
+1. [Acerca del proyecto](#acerca-del-proyecto)
+    1. [Motivación](#motivación)
+    1. [¿Qué es un PDF indexado?](#qué-es-un-pdf-indexado)
+    1. [¿Cómo funciona este proyecto?](#cómo-funciona-este-proyecto)
+1. [Uso del script](#uso-del-script)
+    1. [Preparación del ambiente de ejecución](#preparación-del-ambiente-de-ejecución)
+        1. [Docker (recomendado)](#docker-recomendado)
+        1. [Instalación Manual](#instalación-manual)
+    1. [Limitaciones](#limitaciones)
+1. [Licencias](#licencias)
+    1. [Este proyecto](#este-proyecto)
+    1. [Libros de texto CONALITEG](#libros-de-texto-conaliteg)
+    1. [Renuncia legal](#renuncia-legal)
 
 ## Acerca del proyecto
 
@@ -79,6 +81,10 @@ dependencias otras que no son bibliotecas de python como es Tesseract
 y su extensión de lenguaje español, los cuales necesitan ser
 instalados por sus métodos correspondientes. 
 
+<p align="center">
+  <img width="568" height="362" src="https://raw.githubusercontent.com/ivancho1707/libros-conaliteg-pdf/gh-pages/assets/demo_console.gif">
+</p>
+
 ### Preparación del ambiente de ejecución
 
 Para ejecutar el script, se necesita la instalación de todas sus 
@@ -123,9 +129,9 @@ Tome en cuenta que desde la ubicación en la que se ejecute este
 comando, se creará un directorio llamado `output` con la su nuevo
 PDF indexado de terminar éxitosamente con la ejecución del
 programa. Si desea cambiar este comportamiento, puede proveer una
-cadena con la ruta de salida, en este caso la ruta debe ser válida
-y el usuario debe tener permisos de escritura o de lo contrario el
-script no comenzará.
+cadena con la ruta de salida en lugar del comando `${PWD}`, en 
+este caso la ruta debe ser válida y el usuario debe tener permisos 
+de escritura o de lo contrario el script no comenzará.
 
 #### Instalación Manual
 
@@ -234,4 +240,3 @@ de la CONALITEG.
 El lucrar con libros de texto gratuitos es un delito federal 
 que se paga con incluso con cárcel. CUIDADO: Si usted paga por una
 copia digital, está participado en un delito.
-
