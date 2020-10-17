@@ -81,6 +81,10 @@ dependencias otras que no son bibliotecas de python como es Tesseract
 y su extensión de lenguaje español, los cuales necesitan ser
 instalados por sus métodos correspondientes. 
 
+<p align="center">
+  <img width="568" height="362" src="https://raw.githubusercontent.com/ivancho1707/libros-conaliteg-pdf/gh-pages/assets/demo_console.gif">
+</p>
+
 ### Preparación del ambiente de ejecución
 
 Para ejecutar el script, se necesita la instalación de todas sus 
