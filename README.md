@@ -122,7 +122,7 @@ Una vez obtenida la imagen, ejecute la siguiente línea desde el
 directorio en el que deseas guardar el PDF para correr el script:
 
 ```
-docker run -it --rm -v ${PWD}:/data/ ivancho1707/libros-conaliteg-pdf:1.0
+docker run -it --rm -v ${PWD}:/data/ ivancho1707/libros-conaliteg-pdf
 ```
 
 Tome en cuenta que desde la ubicación en la que se ejecute este 
