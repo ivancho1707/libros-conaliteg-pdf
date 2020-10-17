@@ -15,4 +15,4 @@ RUN pip3 install -r /conaliteg/requirements.txt
 
 WORKDIR /conaliteg
 
-ENTRYPOINT ["/usr/bin/python3", "/conaliteg/main.py"]
+ENTRYPOINT ["/usr/bin/python3", "/conaliteg/main.py", "/data"]

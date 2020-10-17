@@ -112,17 +112,20 @@ directorio que contiene el archivo:
 docker build -t ivancho1707/libros-conaliteg-pdf:1.0 -f Dockerfile . 
 ```
 
-Una vez obtenida la imagen, ejecute la siguiente línea para correr
-el script:
+Una vez obtenida la imagen, ejecute la siguiente línea desde el
+directorio en el que deseas guardar el PDF para correr el script:
 
 ```
-docker run -it --rm -v ${PWD}:/conaliteg/ ivancho1707/libros-conaliteg-pdf:1.0
+docker run -it --rm -v ${PWD}:/data/ ivancho1707/libros-conaliteg-pdf:1.0
 ```
 
 Tome en cuenta que desde la ubicación en la que se ejecute este 
 comando, se creará un directorio llamado `output` con la su nuevo
 PDF indexado de terminar éxitosamente con la ejecución del
-programa.
+programa. Si desea cambiar este comportamiento, puede proveer una
+cadena con la ruta de salida, en este caso la ruta debe ser válida
+y el usuario debe tener permisos de escritura o de lo contrario el
+script no comenzará.
 
 #### Instalación Manual
 

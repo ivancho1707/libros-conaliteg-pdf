@@ -2,9 +2,12 @@
 # -*- coding: utf-8 -*-
 
 import concurrent.futures
+import sys
 import os
 import shutil
 import ssl
+from pathlib import Path
+
 from simple_term_menu import TerminalMenu
 from datetime import datetime
 from urllib import request
@@ -15,6 +18,7 @@ import yaml
 
 BASE_URL = "https://historico.conaliteg.gob.mx/"
 WORKSPACE = os.path.abspath(os.path.dirname(os.path.abspath(__file__)))
+OUTPUT_DIR = os.path.join(WORKSPACE, 'output') if len(sys.argv) < 2 else sys.argv[1]
 ssl._create_default_https_context = ssl._create_unverified_context
 
 
@@ -37,7 +41,7 @@ class Book:
         return self._page_count
 
     def get_dir_path(self):
-        return os.path.join(WORKSPACE, "output", self.get_title())
+        return os.path.join(OUTPUT_DIR, self.get_title())
 
     def get_book_file_path(self):
         return os.path.join(self.get_dir_path(), f"{self.get_title()}.pdf")
@@ -136,9 +140,13 @@ def prompt_book(catalogue, grade):
 
 
 def create_output_dir():
-    output_dir_path = os.path.join(WORKSPACE, 'output')
-    if not os.path.exists(output_dir_path) or not os.path.isdir(output_dir_path):
-        os.mkdir(output_dir_path)
+    try:
+        Path(OUTPUT_DIR).mkdir(parents=True, exist_ok=True)
+    except FileNotFoundError:
+        raise IOError("El directorio de salida no existe y no puede ser creado ya que el directorio padre tampoco "
+                      "existe")
+    except OSError:
+        raise IOError("El directorio proporcionado no es válido o bien es de sólo lectura")
 
 
 def main():
