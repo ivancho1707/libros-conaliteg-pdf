@@ -1,5 +1,9 @@
 # Script de descarga para libros CONALITEG
 
+<p align="center">
+  <img width="552" height="670" src="https://raw.githubusercontent.com/ivancho1707/libros-conaliteg-pdf/gh-pages/assets/demo_final.gif">
+</p>
+
 1. Acerca del proyecto
     1. Motivación
     1. ¿Qué es un PDF indexado?
@@ -13,8 +17,6 @@
     1. Este proyecto
     1. Libros de texto CONALITEG
     1. Renuncia legal
-
-
 
 ## Acerca del proyecto
 
