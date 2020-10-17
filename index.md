@@ -129,9 +129,9 @@ Tome en cuenta que desde la ubicación en la que se ejecute este
 comando, se creará un directorio llamado `output` con la su nuevo
 PDF indexado de terminar éxitosamente con la ejecución del
 programa. Si desea cambiar este comportamiento, puede proveer una
-cadena con la ruta de salida, en este caso la ruta debe ser válida
-y el usuario debe tener permisos de escritura o de lo contrario el
-script no comenzará.
+cadena con la ruta de salida en lugar del comando `${PWD}`, en 
+este caso la ruta debe ser válida y el usuario debe tener permisos 
+de escritura o de lo contrario el script no comenzará.
 
 #### Instalación Manual
 
