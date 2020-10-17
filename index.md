@@ -5,18 +5,18 @@
 </p>
 
 1. [Acerca del proyecto](#acerca-del-proyecto)
-    1. [Motivación](#motivaci&oacute;n)
+    1. [Motivación](#motivación)
     1. [¿Qué es un PDF indexado?](#qué-es-un-pdf-indexado)
-    1. ¿Cómo funciona este proyecto?
-1. Uso del script
-    1. Preparación del ambiente de ejecución
-        1. Docker (recomendado)
-        1. Instalación Manual
-    1. Limitaciones
-1. Licencias
-    1. Este proyecto
-    1. Libros de texto CONALITEG
-    1. Renuncia legal
+    1. [¿Cómo funciona este proyecto?](#cómo-funciona-este-proyecto)
+1. [Uso del script](#uso-del-script)
+    1. [Preparación del ambiente de ejecución](#preparación-del-ambiente-de-ejecución)
+        1. [Docker (recomendado)](#docker-recomendado)
+        1. [Instalación Manual](#instalación-manual)
+    1. [Limitaciones](#limitaciones)
+1. [Licencias](#licencias)
+    1. [Este proyecto](#este-proyecto)
+    1. [Libros de texto CONALITEG](#libros-de-texto-conaliteg)
+    1. [Renuncia legal](#renuncia-legal)
 
 ## Acerca del proyecto
 
